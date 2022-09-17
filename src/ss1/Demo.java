@@ -33,6 +33,7 @@ public class Demo {
         b.run();
         System.out.println(Car.color);
 
+
         TamGiac t = new TamGiac();
         t.setCanh1(4);
         t.canh2=5;
