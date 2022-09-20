@@ -6,14 +6,14 @@ import java.util.Scanner;
 public class Account {
         int soTK;
         String tenTK;
-        int soTienTrongTK;
+        double soTienTrongTK;
 
         Scanner sc = new Scanner(System.in);
 
         public Account() {
         }
 
-        public Account(long soTK, String tenTK, double soTienTrongTK) {
+        public Account(int soTK, String tenTK, double soTienTrongTK) {
                 this.soTK = soTK;
                 this.tenTK = tenTK;
                 this.soTienTrongTK = soTienTrongTK;
@@ -23,7 +23,7 @@ public class Account {
                 return this.soTK;
         }
 
-        public void setSoTK(long soTK) {
+        public void setSoTK(int soTK) {
                 this.soTK = soTK;
         }
 
