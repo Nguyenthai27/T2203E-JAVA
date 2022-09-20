@@ -4,9 +4,9 @@ import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Account {
-        private long soTK;
-        private String tenTK;
-        private double soTienTrongTK;
+        int soTK;
+        String tenTK;
+        int soTienTrongTK;
 
         Scanner sc = new Scanner(System.in);
 
