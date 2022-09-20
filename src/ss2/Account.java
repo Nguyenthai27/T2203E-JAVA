@@ -1,0 +1,82 @@
+package ss2;
+
+import java.text.NumberFormat;
+import java.util.Scanner;
+
+public class Account {
+        private long soTK;
+        private String tenTK;
+        private double soTienTrongTK;
+
+        Scanner sc = new Scanner(System.in);
+
+        public Account() {
+        }
+
+        public Account(long soTK, String tenTK, double soTienTrongTK) {
+                this.soTK = soTK;
+                this.tenTK = tenTK;
+                this.soTienTrongTK = soTienTrongTK;
+        }
+
+        public long getSoTK() {
+                return this.soTK;
+        }
+
+        public void setSoTK(long soTK) {
+                this.soTK = soTK;
+        }
+
+        public String getTenTK() {
+                return this.tenTK;
+        }
+
+        public void setTenTK(String tenTK) {
+                this.tenTK = tenTK;
+        }
+
+        public double getSoTienTrongTK() {
+                return this.soTienTrongTK;
+        }
+
+        public void setSoTienTrongTK(double soTienTrongTK) {
+                this.soTienTrongTK = soTienTrongTK;
+        }
+
+        public String toString() {
+                NumberFormat currencyEN = NumberFormat.getCurrencyInstance();
+                String str1 = currencyEN.format(soTienTrongTK);
+                return soTK + "-" + tenTK + "-" + str1;
+        }
+
+        public double napTien() {
+                double nap;
+                System.out.print("Nhập số tiền bạn cần nạp: ");
+                nap = sc.nextDouble();
+                if (nap >= 0) {
+                        soTienTrongTK = nap + soTienTrongTK;
+                        NumberFormat currencyEN = NumberFormat.getCurrencyInstance();
+                        String str1 = currencyEN.format(nap);
+                        System.out.println("bạn vừa nạp " + str1 + " vào tài khoản.");
+                } else {
+                        System.out.println("Số tiền nạp vào không hợp lệ!");
+                }
+                return nap;
+        }
+        public double thanhToan() {
+                double phi = 5;
+                double thanhToan;
+                System.out.print("Nhập số tiền bạn cần thanh toán: ");
+                thanhToan = sc.nextDouble();
+                if (thanhToan <= (soTienTrongTK - phi)) {
+                        soTienTrongTK = soTienTrongTK - (thanhToan + phi);
+                        NumberFormat currencyEN = NumberFormat.getCurrencyInstance();
+                        String str1 = currencyEN.format(thanhToan);
+                        System.out.println("Bạn vừa thanh toán " + str1 + "Đ từ tài khoản. Phí là $5.");
+                } else {//ngược lại nếu số tiền rút lớn hơn số tiền có trong tài khoản thì không hợp lệ
+                        System.out.println("Số tiền muốn rút không hợp lệ!");
+                        return thanhToan();
+                }
+                return thanhToan;
+        }
+}
