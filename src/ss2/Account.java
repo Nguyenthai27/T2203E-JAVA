@@ -72,7 +72,7 @@ public class Account {
                         soTienTrongTK = soTienTrongTK - (thanhToan + phi);
                         NumberFormat currencyEN = NumberFormat.getCurrencyInstance();
                         String str1 = currencyEN.format(thanhToan);
-                        System.out.println("Bạn vừa thanh toán " + str1 + "Đ từ tài khoản. Phí là $5.");
+                        System.out.println("Bạn vừa thanh toán " + str1 + "Đã từ tài khoản. Phí là $5.");
                 } else {
                         System.out.println("Số tiền muốn rút không hợp lệ!");
                         return thanhToan();
