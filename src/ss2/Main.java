@@ -12,10 +12,10 @@ public class Main {
 
         Human h2 = new Human("Nguyen Tuan Anh");
         System.out.println(h2.name);
-        Student s = new Student("Nguyen Van A","013012331","So 8 Ton That Thuyet",18);
-        s.girlFriends[0] = "Ngoc Trinh";
-        s.girlFriends[1] = "Thi No";
-        s.myCar = new Car();
+//        Student s = new Student("Nguyen Van A","013012331","So 8 Ton That Thuyet",18);
+//        s.girlFriends[0] = "Ngoc Trinh";
+//        s.girlFriends[1] = "Thi No";
+//        s.myCar = new Car();
 
 
         int[] mark = new int[4];
@@ -23,7 +23,7 @@ public class Main {
 
         Student[] students = new Student[10];
 
-        students[0] = new Student("Nguyen Van A","013012331","So 8 Ton That Thuyet",18);
+//        students[0] = new Student("Nguyen Van A","013012331","So 8 Ton That Thuyet",18);
 
         for(int i = 0 ; i< students.length ; i++){
             students[i] = new Student();

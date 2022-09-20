@@ -64,15 +64,14 @@ public class Account {
                 return nap;
         }
         public double thanhToan() {
-                double phi = 5;
                 double thanhToan;
                 System.out.print("Nhập số tiền bạn cần thanh toán: ");
                 thanhToan = sc.nextDouble();
-                if (thanhToan <= (soTienTrongTK - phi)) {
-                        soTienTrongTK = soTienTrongTK - (thanhToan + phi);
+                if (thanhToan <= (soTienTrongTK)) {
+                        soTienTrongTK = soTienTrongTK - thanhToan;
                         NumberFormat currencyEN = NumberFormat.getCurrencyInstance();
                         String str1 = currencyEN.format(thanhToan);
-                        System.out.println("Bạn vừa thanh toán " + str1 + "Đã từ tài khoản. Phí là $5.");
+                        System.out.println("Bạn vừa thanh toán " + str1 + "Đã từ tài khoản.");
                 } else {
                         System.out.println("Số tiền muốn rút không hợp lệ!");
                         return thanhToan();
