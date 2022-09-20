@@ -73,7 +73,7 @@ public class Account {
                         NumberFormat currencyEN = NumberFormat.getCurrencyInstance();
                         String str1 = currencyEN.format(thanhToan);
                         System.out.println("Bạn vừa thanh toán " + str1 + "Đ từ tài khoản. Phí là $5.");
-                } else {//ngược lại nếu số tiền rút lớn hơn số tiền có trong tài khoản thì không hợp lệ
+                } else {
                         System.out.println("Số tiền muốn rút không hợp lệ!");
                         return thanhToan();
                 }
