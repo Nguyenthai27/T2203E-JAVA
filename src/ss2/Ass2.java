@@ -1,6 +1,7 @@
 package ss2;
 
 import java.util.Scanner;
+
 public class Ass2 {
         static Scanner sc = new Scanner(System.in);
         static void nhapTK (Account tk){
