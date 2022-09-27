@@ -16,5 +16,5 @@ public abstract class Phone {
 
     abstract void searchPhone(String name);
 
-    abstract void sort();
+    abstract void sort(String);
 }

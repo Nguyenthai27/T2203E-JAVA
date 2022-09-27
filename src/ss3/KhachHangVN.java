@@ -17,7 +17,7 @@ public class KhachHangVN extends KhachHang {
     }
 
     @Override
-    public int thanhTien(int gia) {
+    public int thanhTien() {
         if (quantity < 50)
             return quantity * 1000;
          else if (quantity < 100)

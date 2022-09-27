@@ -44,7 +44,7 @@ public class KhachHang {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-    public int thanhTien(int gia){
+    public int thanhTien(){
         return quantity*2000;
     }
 }

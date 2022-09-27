@@ -16,7 +16,7 @@ public class KhachHangNN extends KhachHang{
     }
 
     @Override
-    public int thanhTien(int gia) {
-        return super.thanhTien(gia);
+    public int thanhTien() {
+        return super.thanhTien();
     }
 }
