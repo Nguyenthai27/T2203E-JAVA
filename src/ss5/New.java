@@ -8,6 +8,7 @@ public class New implements INews {
     String Content;
     float AverageRate;
 
+
     @Override
     public void Display() {
 
