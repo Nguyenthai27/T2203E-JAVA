@@ -7,17 +7,17 @@ public class News implements INews {
     String Author;
     String Content;
     float AverageRate;
-    int RateList[] = new int[13];
+    int [] RateList = new int[13];
     public News(){
 
     }
-    public News(int ID, String title, String publishDate, String author, String content, float averageRate) {
+
+    public News(int ID, String title, String publishDate, String author, String content) {
         this.ID = ID;
         Title = title;
         PublishDate = publishDate;
         Author = author;
         Content = content;
-        AverageRate = averageRate;
     }
 
     public int getID() {
