@@ -1,17 +1,23 @@
 package ss5;
 
-public class New implements INews {
+public class News implements INews {
     int ID;
     String Title;
     String PublishDate;
     String Author;
     String Content;
     float AverageRate;
+    int RateList[] = new int[13];
+    public News(){
 
-
-    @Override
-    public void Display() {
-
+    }
+    public News(int ID, String title, String publishDate, String author, String content, float averageRate) {
+        this.ID = ID;
+        Title = title;
+        PublishDate = publishDate;
+        Author = author;
+        Content = content;
+        AverageRate = averageRate;
     }
 
     public int getID() {
@@ -56,5 +62,22 @@ public class New implements INews {
 
     public float getAverageRate() {
         return AverageRate;
+    }
+    @Override
+    public void Display() {
+        System.out.println(ID);
+        System.out.println(Title);
+        System.out.println(PublishDate);
+        System.out.println(Author);
+        System.out.println(Content);
+        System.out.println(AverageRate);
+    }
+
+    public void Calculate(){
+        float t = 0;
+        for(int r:RateList){
+            t+=r;
+        }
+        AverageRate = t/3;
     }
 }
