@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="56.0" layoutY="31.0" prefHeight="39.0" prefWidth="151.0" promptText="Ho va ten">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="334.0" layoutY="25.0" promptText="Email" />
+      <TextField layoutX="56.0" layoutY="99.0" prefHeight="39.0" prefWidth="165.0" promptText="Tuoi" />
+      <TextField layoutX="334.0" layoutY="89.0" promptText="Dia Chi" />
+      <Button layoutX="181.0" layoutY="161.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="188.0" text="In thông tin " />
+      <Label text="Họ Và Tên"/>
+      <Label text="Tuổi"/>
+      <Label text="Email"/>
+      <Label text="Địa chỉ"/>
+   </children>
+</Pane>
